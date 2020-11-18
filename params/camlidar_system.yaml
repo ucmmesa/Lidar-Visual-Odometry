@@ -1,0 +1,7 @@
+%YAML:1.0
+# DEDVO PARAM FIlE
+Parameter.File: "camlidar_param.yaml"
+
+# Topic name
+Ros.Camera: "/pg_14425687/image_raw"
+Ros.Velodyne: "/velodyne_points"

@@ -1,0 +1,68 @@
+%YAML:1.0
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.width: 1226
+Camera.height: 370
+
+Camera.fx: 707.0912
+Camera.fy: 707.0912
+Camera.cx: 601.8873
+Camera.cy: 183.1104
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.d0: 0.0
+Camera.d1: 0.0
+Camera.d2: 0.0
+Camera.d3: 0.0
+Camera.d4: 0.0
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 0
+
+# CamLidar Extrinsic Parameter
+extrinsicMatrix: !!opencv-matrix
+   rows: 3
+   cols: 4
+   dt: d
+   data: [-0.001857739385241, -0.9999659513510, -0.008039975204516, -0.004784029760483,
+          -0.006481465826011,  0.008051860151134, -0.9999466081774, -0.07337429464231,
+           0.9999773098287, -0.001805528627661, -0.006496203536139, -0.3339968064433]
+
+# Vocabulary
+LoopClosure.f_vocabulary: "ORBvoc.yml.gz"
+
+# ORB Extractor
+ORBextractor.nFeatures: 1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+# Tracker Setting
+# ScaleEstimator : None, TDistributionScale
+# WeightFunction attribute : None, TDistributionWeight
+Tracker.levels: 2
+Tracker.min_level: 0
+Tracker.max_level: 1
+Tracker.max_iteration: 100
+Tracker.scale_estimator: "TDistributionScale"
+Tracker.weight_function: "TDistributionWeight"
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+#Viewer.KeyFrameSize: 0.6
+#Viewer.KeyFrameLineWidth: 2
+#Viewer.GraphLineWidth: 1
+#Viewer.PointSize:2
+#Viewer.CameraSize: 0.7
+#Viewer.CameraLineWidth: 3
+#Viewer.ViewpointX: 0
+#Viewer.ViewpointY: -100
+#Viewer.ViewpointZ: -0.1
+#Viewer.ViewpointF: 2000
+

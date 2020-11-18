@@ -1,0 +1,19 @@
+%YAML:1.0
+# DEDVO PARAM FIlE
+#Parameter.File: "camlidar_param2.yaml"
+
+# Topic name
+#Ros.Camera: "/pg_14425687/image_raw"
+#Ros.Velodyne: "/velodyne_point_cloud"
+
+## KITTI
+Parameter.File: "KITTI05.yaml"
+Ros.Camera: "/kitti/camera_gray_left/image_raw"
+Ros.Velodyne: "/kitti/velo/pointcloud"
+Ros.Imu: "/kitti/oxts/imu"
+
+## JD
+#Parameter.File: "logitech.yaml"
+#Ros.Camera: "/image_raw"
+#Ros.Velodyne: "/points_raw"
+#Ros.Imu: "/kitti/oxts/imu"

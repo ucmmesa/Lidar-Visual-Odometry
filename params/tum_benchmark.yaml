@@ -1,0 +1,7 @@
+%YAML:1.0
+# DEDVO PARAM FIlE
+Parameter.File: "tum_rgbd.yaml"
+
+# Topic name
+Ros.Camera: "/camera/rgb/image_mono"
+Ros.Velodyne: "/camera/depth/points"

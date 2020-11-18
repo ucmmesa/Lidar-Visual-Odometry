@@ -1,0 +1,73 @@
+%YAML:1.0
+
+# Camera calibration and distortion parameters (OpenCV) 
+Camera.width: 800
+Camera.height: 600
+
+Camera.fx: 406.038517439466
+Camera.fy: 409.270590103312
+Camera.cx: 384.290725514147
+Camera.cy: 297.023372851439
+
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.d0: -0.0452384425449409
+Camera.d1: 0.0998652362188228
+Camera.d2: 0.000546416813872115
+Camera.d3: 0.000266556874301166
+Camera.d4: -0.0505331262123521
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 0
+
+# CamLidar Extrinsic Parameter
+extrinsicMatrix: !!opencv-matrix
+   rows: 3
+   cols: 4
+   dt: d
+   data: [    -0.026048184180701,  -0.999496302592056,   0.018128243315259,   0.008124692608757,
+              -0.009515449990384,  -0.017885671418427,  -0.999794758422644,  -0.083978097152378,
+               0.999615400197680,  -0.026215336402972,  -0.009044767819586,  -0.035590858466099]
+#   data: [ 0.0, -1.0,  0.0,  0.0,
+#           0.0,  0.0, -1.0, -0.125,
+#           1.0,  0.0,  0.0, -0.05]
+
+#data: [ 0.0, -1.0,  0.0,  0.0,
+#        0.0,  0.0, -1.0, -0.0825,
+#        1.0,  0.0,  0.0, -0.09622]
+
+# Vocabulary
+LoopClosure.f_vocabulary: "ORBvoc.yml.gz"
+
+# ORB Extractor
+ORBextractor.nFeatures: 1000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+# Tracker Setting
+Tracker.levels: 5
+Tracker.min_level: 0
+Tracker.max_level: 4
+Tracker.max_iteration: 100
+Tracker.scale_estimator: "TDistributionScale"
+Tracker.weight_function: "TDistributionWeight"
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+#Viewer.KeyFrameSize: 0.6
+#Viewer.KeyFrameLineWidth: 2
+#Viewer.GraphLineWidth: 1
+#Viewer.PointSize:2
+#Viewer.CameraSize: 0.7
+#Viewer.CameraLineWidth: 3
+#Viewer.ViewpointX: 0
+#Viewer.ViewpointY: -100
+#Viewer.ViewpointZ: -0.1
+#Viewer.ViewpointF: 2000
+

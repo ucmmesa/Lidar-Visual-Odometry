@@ -1,0 +1,8 @@
+%YAML:1.0
+# DEDVO PARAM FIlE
+Parameter.File: "KITTI00.yaml"
+
+# Topic name
+Ros.Camera: "/kitti/left_image"
+#Ros.Camera: "/kitti/left_color_image"
+Ros.Velodyne: "/kitti/velodyne_points"
